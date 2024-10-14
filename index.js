@@ -3,7 +3,7 @@ const { GPTx } = require('@ruingl/gptx');
 const axios = require('axios');
 
 const app = express();
-const gptx = new GPTx({ provider: 'Nextway', model: 'gemini-pro' });
+const gptx = new GPTx({ provider: 'Aryahcr', model: '	gpt-4' });
 
 // Middleware to parse JSON requests
 app.use(express.json());
@@ -31,7 +31,7 @@ app.post('/chat', async (req, res) => {
 });
 
 // Start the server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3100;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
